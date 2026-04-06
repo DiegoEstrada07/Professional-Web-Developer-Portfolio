@@ -1,11 +1,28 @@
 import './App.css';
+import React from 'react';
 import img from './assets/img.png';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import About from './components/about';
+import Project from './components/proyects';
+
 
 function App() {
   return (
     <div className="App">
       <header>
-
+        <Router>
+          <div className="navbar">
+            <div className="logo">DEV_ARCHIVE</div>
+            <div className="nav-links">
+              <Link to="/">About</Link>
+              <Link to="/projects">Projects</Link>
+            </div>
+          </div>
+          <Routes>
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Project />} />
+          </Routes>
+        </Router>
       </header>
       <main>
         <section className="hero">

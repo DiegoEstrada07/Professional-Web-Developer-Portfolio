@@ -1,11 +1,11 @@
 
 
-function Proyect(){
+function Project(){
     return(
         <div>
-
+            <p>hola</p>
         </div>
     )
 }
 
-export default Proyect;
+export default Project;
