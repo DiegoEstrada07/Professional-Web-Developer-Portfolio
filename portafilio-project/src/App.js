@@ -7,6 +7,7 @@ import Project from './components/proyects';
 
 
 function App() {
+  const gitUrl= "https://github.com/DiegoEstrada07";
   return (
     <div className="App">
       <header>
@@ -79,9 +80,21 @@ function App() {
           </div>
         </section>
       </main>
-      <footer>
-        <div>
+      <div className='main-footer-gradiant'> 
+      </div>
+      <footer class="footer">
+        <div class="footer-left">
+          <h2>DIGITAL_ARCHIVE</h2>
+          <p>© 2024 DIGITAL_ARCHIVE. ALL RIGHTS RESERVED.</p>
+        </div>
 
+        <div class="footer-right">
+          <a href={gitUrl}>
+            GITHUB
+          </a>
+          <a href={gitUrl}>
+            LINKEDIN
+          </a>
         </div>
       </footer>
     </div>
