@@ -1,8 +1,5 @@
 import './App.css';
 import img from './assets/img.png';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import About from './components/about';
-import Project from './components/proyects';
 
 
 
@@ -11,19 +8,12 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Router>
-          <div className="navbar">
-            <div className="logo">ESTRADA_DEV</div>
-            <div className="nav-links">
-              <Link to="/">About</Link>
-              <Link to="/projects">Projects</Link>
-            </div>
+        <div className="navbar">
+          <div className="logo">ESTRADA_DEV</div>
+          <div className="nav-links">
+            <a>Look at my complete resume</a>
           </div>
-          <Routes>
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Project />} />
-          </Routes>
-        </Router>
+        </div>
       </header>
       <main>
         <section className="hero">
@@ -57,8 +47,20 @@ function App() {
         </section>
         <div className='gradiant_space'>
         </div>
+        <section className="summary">
+          <p className='summary_title'>Summary</p>
+          <div className='summary_content'>
+            <p>
+              International student studying web development in Vancouver searching for 
+              new oportunities. Motivated and detail oriented professional with 6 months of experience in technical services. 
+              Experienced in equipment maintenance and computer troubleshooting. 
+              Strong interpersonal and problem solving skills, with a demonstrated ability 
+              to adapt to dynamic environments and provide excellent service. 
+            </p>
+          </div>
+        </section>
         <section className='experience'>
-          <h2>My_Experience</h2>
+          <p>My_Experience</p>
           <div className='my_experience'>
             <div className='experience_zone'>
               <span className="years">xxxx — xxxx</span>
@@ -79,16 +81,45 @@ function App() {
             </div>    
           </div>
         </section>
+        <section className='studies'>
+          <p>My_Studies</p>
+          <div className="timeline">
+            <div className="container left">
+              <div className="card">
+                <span className="date">2022 — 2025</span>
+                <h2>Computer technician</h2>
+                <h4>Centro de estudios científicos y tecnológicos No 5</h4>
+                <ul>
+                  <li>Three years of study at one of the best specialized high schools in Mexico.</li>
+                </ul>
+              </div>
+            </div>
+            {/*
+            <div className="container right">
+              <div className="card">
+                <span className="date">2025 — 2026</span>
+                <h2>Software Engineer II</h2>
+                <h4>Stellar Global Networks</h4>
+                <ul>
+                  <li>Developed APIs with Python/FastAPI.</li>
+                  <li>Improved database performance by 30%.</li>
+                  <li>Increased test coverage to 92%.</li>
+                </ul>
+              </div>
+            </div>
+            */}
+          </div>
+        </section>
+        <div className='main-footer-gradiant'> 
+        </div>
       </main>
-      <div className='main-footer-gradiant'> 
-      </div>
-      <footer class="footer">
-        <div class="footer-left">
-          <h2>DIGITAL_ARCHIVE</h2>
-          <p>© 2024 DIGITAL_ARCHIVE. ALL RIGHTS RESERVED.</p>
+      <footer className="footer">
+        <div className="footer-left">
+          <h2>ESTRADA_DEV</h2>
+          <p>©ᓚᘏᗢ.</p>
         </div>
 
-        <div class="footer-right">
+        <div className="footer-right">
           <a href={gitUrl}>
             GITHUB
           </a>
