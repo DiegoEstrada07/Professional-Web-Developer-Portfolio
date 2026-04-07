@@ -1,9 +1,9 @@
 import './App.css';
-import React from 'react';
 import img from './assets/img.png';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import About from './components/about';
 import Project from './components/proyects';
+
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <header>
         <Router>
           <div className="navbar">
-            <div className="logo">DEV_ARCHIVE</div>
+            <div className="logo">ESTRADA_DEV</div>
             <div className="nav-links">
               <Link to="/">About</Link>
               <Link to="/projects">Projects</Link>
@@ -47,11 +47,35 @@ function App() {
                   alt="profile"
                 />
               </div>
-              <div className="experience">
+              <div className="message">
                 <h2>EXITED FOR</h2>
                 <span>A NEW BEGINNEN</span>
               </div>
             </div>
+          </div>
+        </section>
+        <div className='gradiant_space'>
+        </div>
+        <section className='experience'>
+          <h2>My_Experience</h2>
+          <div className='my_experience'>
+            <div className='experience_zone'>
+              <span className="years">xxxx — xxxx</span>
+              <h2 className="title">Help me start my new story</h2>
+              <h3 className="company">I want to learn from you</h3>
+
+              <ul className="list">
+                <li>
+                  I’m still just a rookie, but even w
+                  ith that, I’m prepared for any work i
+                  n web development, and I hope you can 
+                  help me in this new career
+                </li>
+                <li>
+                  Check my GitHub
+                </li>
+              </ul>
+            </div>    
           </div>
         </section>
       </main>
