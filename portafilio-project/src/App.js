@@ -11,7 +11,6 @@ function App() {
         <div className="navbar">
           <div className="logo">ESTRADA_DEV</div>
           <div className="nav-links">
-            <a>Look at my complete resume</a>
           </div>
         </div>
       </header>
