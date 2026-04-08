@@ -1,7 +1,11 @@
 import './App.css';
 import img from './assets/img.png';
-
-
+import resume from './assets/docs/Diego_Estrada.pdf';
+import download from './assets/download.svg';
+import html from './assets/logos/html5-logo.svg';
+import css from './assets/logos/css3-logo.svg';
+import java from './assets/logos/js-logo.svg';
+import react from './assets/logos/react-logo.svg'
 
 function App() {
   const gitUrl= "https://github.com/DiegoEstrada07";
@@ -11,6 +15,12 @@ function App() {
         <div className="navbar">
           <div className="logo">ESTRADA_DEV</div>
           <div className="nav-links">
+            <a href={resume} download>
+              <img
+                  src={download}
+                  alt="download"
+                />
+            </a>
           </div>
         </div>
       </header>
@@ -28,6 +38,27 @@ function App() {
                 Building modern web experiences with <strong>code</strong> and{" "}
                 <strong>passion</strong>. 
               </p>
+              <div className='habilities'>
+                <img
+                  src={html}
+                  alt="html"
+                />
+                <gap className='gap'/>
+                <img
+                  src={css}
+                  alt="css"
+                />
+                <gap className='gap'/>
+                <img
+                  src={java}
+                  alt="java"
+                />
+                <gap className='gap'/>
+                <img
+                  src={react}
+                  alt="react"
+                />
+              </div>
             </div>
 
             <div className="hero-right">
@@ -115,6 +146,7 @@ function App() {
       <footer className="footer">
         <div className="footer-left">
           <h2>ESTRADA_DEV</h2>
+          <p>diego.estrada1705@gmail.com</p>
           <p>©ᓚᘏᗢ.</p>
         </div>
 
