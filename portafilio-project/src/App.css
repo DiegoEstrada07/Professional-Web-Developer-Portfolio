@@ -426,3 +426,177 @@ header {
 .footer-right a:hover {
   color: var(--primary-green);
 }
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .hero {
+    padding: 60px 40px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 60px;
+  }
+
+  .hero-left p {
+    font-size: 22px;
+  }
+
+  .image-card {
+    width: 300px;
+    height: 380px;
+  }
+
+  .summary,
+  .experience {
+    padding: 40px;
+  }
+
+  .my_experience {
+    grid-template-columns: 1fr;
+    height: auto;
+    overflow: visible;
+  }
+
+  .studies {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .timeline::after {
+    left: 20px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+
+  .container::after {
+    left: 10px;
+  }
+
+  .right {
+    left: 0;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 40px 20px;
+    min-height: auto;
+  }
+
+  .hero-left h1 {
+    font-size: 40px;
+  }
+
+  .hero-left p {
+    font-size: 18px;
+  }
+
+  .badge {
+    font-size: 14px;
+  }
+
+  .image-card {
+    width: 250px;
+    height: 320px;
+  }
+
+  .message {
+    position: static;
+    margin-top: 15px;
+  }
+
+  .summary_title,
+  .experience p,
+  .studies p {
+    font-size: 32px;
+  }
+
+  .summary_content {
+    font-size: 18px;
+  }
+
+  .summary_content p {
+    padding: 15px;
+  }
+
+  .experience {
+    margin-top: 100px;
+  }
+
+  .experience_zone {
+    height: auto;
+  }
+
+  .studies {
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-right {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+
+  .hero-left h1 {
+    font-size: 32px;
+  }
+
+  .hero-left p {
+    font-size: 16px;
+  }
+
+  .summary_title,
+  .experience p,
+  .studies p {
+    font-size: 26px;
+  }
+
+  .navbar .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+}
