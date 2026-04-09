@@ -95,19 +95,21 @@ function App() {
           <p>My_Experience</p>
           <div className='my_experience'>
             <div className='experience_zone'>
-              <span className="years">xxxx — xxxx</span>
-              <h2 className="title">Help me start my new story</h2>
-              <h3 className="company">I want to learn from you</h3>
+              <span className="years">2024 — 2025</span>
+              <h2 className="title">IT assistant</h2>
+              <h3 className="company">Centro de estudios científicos y tecnológicos No 5</h3>
 
               <ul className="list">
                 <li>
-                  I’m still just a rookie, but even with
-                   that, I’m prepared for any work i
-                  n web development, and I hope you can 
-                  help me in this new career
+                  My labor was to support the school it system by
+                  providing maintenance to the computers cables and internet 
+                  systems.
                 </li>
                 <li>
-                  Check my GitHub
+                  Knowledge in computer sience and wireless conections.
+                </li>
+                <li>
+                  Knowledge in computer hardware for their maintenance.
                 </li>
               </ul>
             </div>    
