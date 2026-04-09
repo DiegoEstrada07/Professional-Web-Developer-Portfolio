@@ -278,6 +278,52 @@ header {
   font-size: 14px;
 }
 
+.my_projects{
+  padding: 120px;
+}
+
+.projects_title{
+  color: var(--primary-green);
+  font-family: var(--grotesk-font);
+  font: bold;
+  font-size: 50px;
+}
+
+.git-card{
+  height: 300px;
+  border: #a0a0a0 solid;
+  box-shadow: #a0a0a0 12px 12px 3px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  height: 70vh;   
+  background-image: url('./assets/github-background.svg');
+  background-repeat: repeat;
+  background-size: 100px;
+  background-position: 87px 10px ;
+  
+}
+
+  
+
+.git-content a{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.git-content p{
+  font-family: var(--inter-font);
+  color: var(--font-color);
+  font-size: 30px;
+}
+
+.my_projects img{
+  height: 100px;
+}
+
 .studies{
   padding-left: 120px;  
   margin-top: 200px;
@@ -493,7 +539,71 @@ header {
   }
 }
 
-/* Móviles */
+@media (max-width: 1200px) {
+  .projects_title {
+    font-size: 40px;
+  }
+
+  .git-card {
+    height: 60vh;
+    background-size: 80px;
+  }
+
+  .git-content p {
+    font-size: 24px;
+  }
+
+  .my_projects img {
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .my_projects {
+    padding: 60px;
+  }
+
+  .projects_title {
+    font-size: 35px;
+  }
+
+  .git-card {
+    height: 50vh;
+    background-size: 70px;
+  }
+
+  .git-content p {
+    font-size: 20px;
+  }
+
+  .my_projects img {
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .my_projects {
+    padding: 30px;
+  }
+
+  .projects_title {
+    font-size: 28px;
+  }
+
+  .git-card {
+    height: 45vh;
+    background-size: 60px;
+  }
+
+  .git-content p {
+    font-size: 18px;
+  }
+
+  .my_projects img {
+    height: 60px;
+  }
+}
+
 @media (max-width: 768px) {
 
   .navbar {

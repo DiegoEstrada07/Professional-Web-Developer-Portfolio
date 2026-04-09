@@ -1,5 +1,6 @@
 import './App.css';
-import img from './assets/img.png';
+import personal_image from './assets/personal-img.png';
+import gitImg from './assets/github-svg-logo.svg';
 import resume from './assets/docs/Diego_Estrada.pdf';
 import download from './assets/download.svg';
 import html from './assets/logos/html5-logo.svg';
@@ -9,6 +10,7 @@ import react from './assets/logos/react-logo.svg'
 
 function App() {
   const gitUrl= "https://github.com/DiegoEstrada07";
+  const linkedinUrl="https://www.linkedin.com/in/diego-estrada-914ba53a5/?skipRedirect=true";
   return (
     <div className="App">
       <header>
@@ -64,7 +66,7 @@ function App() {
             <div className="hero-right">
               <div className="image-card">
                 <img
-                  src={img}
+                  src={personal_image}
                   alt="profile"
                 />
               </div>
@@ -99,8 +101,8 @@ function App() {
 
               <ul className="list">
                 <li>
-                  I’m still just a rookie, but even w
-                  ith that, I’m prepared for any work i
+                  I’m still just a rookie, but even with
+                   that, I’m prepared for any work i
                   n web development, and I hope you can 
                   help me in this new career
                 </li>
@@ -109,6 +111,20 @@ function App() {
                 </li>
               </ul>
             </div>    
+          </div>
+        </section>
+        <section className='my_projects'>
+          <p className='projects_title'>My_Projects</p>
+          <div className='git-card'>
+              <div className='git-content'>
+                <a href={gitUrl}>
+                  <p>Go and look my github</p>
+                  <img
+                    src={gitImg}
+                    alt="github_logo"
+                  />
+                </a>
+              </div>
           </div>
         </section>
         <section className='studies'>
@@ -154,7 +170,7 @@ function App() {
           <a href={gitUrl}>
             GITHUB
           </a>
-          <a href={gitUrl}>
+          <a href={linkedinUrl}>
             LINKEDIN
           </a>
         </div>
