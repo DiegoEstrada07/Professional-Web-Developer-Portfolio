@@ -47,8 +47,8 @@ header {
 }
 
 .nav-links {
-  display: flex;
-  gap: 20px;
+  display: flex;  
+  
 }
 
 .nav-links a {
@@ -60,6 +60,13 @@ header {
 
 .nav-links a img {
   width: 55px;
+}
+
+.nav-links p {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
 }
 
 .navbar h1 {

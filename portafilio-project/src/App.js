@@ -10,18 +10,19 @@ import react from './assets/logos/react-logo.svg'
 
 function App() {
   const gitUrl= "https://github.com/DiegoEstrada07";
-  const linkedinUrl="https://www.linkedin.com/in/diego-estrada-914ba53a5/?skipRedirect=true";
+  const linkedinUrl="https://www.linkedin.com/in/diego-estrada-webdev/";
   return (
     <div className="App">
       <header>
         <div className="navbar">
           <div className="logo">ESTRADA_DEV</div>
           <div className="nav-links">
+            <p>RESUME</p>
             <a href={resume} download>
               <img
                   src={download}
                   alt="download"
-                />
+              />
             </a>
           </div>
         </div>
@@ -142,20 +143,19 @@ function App() {
                 </ul>
               </div>
             </div>
-            {/*
             <div className="container right">
               <div className="card">
-                <span className="date">2025 — 2026</span>
-                <h2>Software Engineer II</h2>
-                <h4>Stellar Global Networks</h4>
+                <span className="date">2025 — in progress</span>
+                <h2>Web Developer Diploma</h2>
+                <h4>Tamwood Careers</h4>
                 <ul>
-                  <li>Developed APIs with Python/FastAPI.</li>
-                  <li>Improved database performance by 30%.</li>
-                  <li>Increased test coverage to 92%.</li>
+                  <li>Develop web´s Front End.</li>
+                  <li>Develop webs´s Back End.</li>
+                  <li>Learn and gain experience with React, Vue, and Django.</li>
+                  <li>Learn Java Script and Python.</li>
                 </ul>
               </div>
             </div>
-            */}
           </div>
         </section>
         <div className='main-footer-gradiant'> 
